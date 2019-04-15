@@ -5,7 +5,7 @@ class FeedItem extends Component {
     render() {
         return (
             <div className="FeedItem">
-                <img className="Image" />
+
                 <Likes />
             </div>
         );

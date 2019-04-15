@@ -35,3 +35,40 @@
     // Make sure that function is called on handleSubmit in ImageUploaderForm!
 
 import React from 'react';
+
+class ImageUploaderForm extends React.Component {
+    constructor (props){
+		super(props)
+		this.state = {
+            imageUploaded: ""
+        }
+    }
+    handleSubmit = (e) => {
+        e.preventDefault()
+        console.log(this.state.imageUploaded)
+    }
+
+    handleChange = (e) => {
+        this.setState({
+            imageUploaded: e.target.value
+        })
+    }
+	render() {
+	  	return (
+            <div className="ImageUploaderForm">
+                <form className="form">
+                    <label>
+                        Enter a URL
+                    </label>
+                    <input value={this.state.imageUploaded}
+                            onChange={(e) => this.handleChange(e)} />
+
+                    <button className="imgsubmitbutton" onClick={this.handleSubmit} >
+                    </button>
+                </form>
+            </div>
+    )
+  }
+}
+
+export default ImageUploaderForm;

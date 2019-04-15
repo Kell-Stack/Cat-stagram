@@ -17,3 +17,25 @@
 
 import React from 'react';
 import data from '../../data.json';
+import ImageUploaderForm from '../components/ImageUploaderForm.jsx';
+import FeedList from '../components/FeedList.jsx';
+
+class HomePage extends React.Component {
+	render(){
+		const {photos} = data
+		console.log(photos);
+		return (
+			<div className="HomePage">
+				<ImageUploaderForm
+
+				/>
+
+				<FeedList
+					photos={photos}
+				/>
+			</div>
+		)
+	}
+}
+
+export default HomePage;

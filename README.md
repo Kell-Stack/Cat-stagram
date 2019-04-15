@@ -1,47 +1,22 @@
-# Intro to React + Redux
+# README Boilerplate
 
-## Setup
+This was a project I did during an Intro to React workshop with GDISF. I'd previously made a few other React apps but all my compnonents were in one file and I wasn't understanding destructuring.  
 
-### Clone the repo:
-```sh
-git clone https://github.com/hyendler/catstagram.git
-```
+## Table of Contents
 
-If you would like to save your work on your own GitHub repo, fork it first, then clone the fork.
+- [Installation](#installation)
+- [Usage](#usage)
 
-### Set up your environment
-This workshop uses npm 5.1.0 and node v8.11.3. If the start instructions don't run below, you might need to install a new verison of node.
 
-Check what versions of node + npm you are running:
-```sh
-npm -v
-node -v
-```
+## Installation
 
-If you are not running npm 5.1.0 and node v8.11.3, install node v8.11.3:
-```sh
-https://nodejs.org/en/download/
-```
+To use node:
+```npm install```
 
-Verify you are running the correct versions.
+Once project is open in your text editor run:
 
-### First time starting the repo:
-Run:
-```sh
-npm install
-```
-Then:
+```npm start```
 
-### Starting the server:
-```sh
-npm start
-```
+## Usage
 
-### To stop the server:
-Ctrl + C
-
-Once Webpack has finished building, go to [http://localhost:9000/](http://localhost:9000/).
-
-### Seeing solution files in the browser:
-
-Go to webpack.config.js and follow instructions in the comments to switch out the entry point to in order to see different solutions reflected in the browser.  If you change the entry point, you will need to stop and restart the server.
+- Scroll through cute cat pics bask in their glory. In the future, I hope to be able to add routes to an API so "users" are able to follow CRUD to create, update, delete posts. Tweet me at @Kell_Stack if you have anymore suggestions.
